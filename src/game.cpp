@@ -13,15 +13,13 @@ int main(){
     //cin >> rounds;
     for (size_t i = 0; i < rounds; i++)
     {
-        playGame(&zeroOne , &bad ,  &rounds ,&i);
+        playGame(&zeroOne , &oneZero ,  &rounds ,&i);
     }
     //Results
     cout<<"ZeroOneGuy: "<<endl;
     zeroOne.showStats();
     cout<<endl;
-    cout<<"BadGuy: "<<endl;
-    bad.showStats();
-    
-    
+    cout<<"oneZeroGuy: "<<endl;
+    oneZero.showStats();
     return 0;
 }

@@ -27,12 +27,10 @@ void badGuy:: desribe(){cout<<"Bad Guy only attacks / returns 1"<<endl;}
                 //Implementing derived oneZeroGuy class
 void oneZeroGuy:: desribe(){cout<<"One Zero guy attacks first and stays calm  one by one/ returns 1,0,1,0,1,0..."<<endl;}
 int oneZeroGuy:: play(){
-    if (move)
-        {
+    if (move){
             move--;
             return 1;
-    }else
-        {
+    }else{
             move++;
             return 0;
         }
@@ -41,13 +39,11 @@ int oneZeroGuy:: play(){
                 //Implementing derived zeroOneGuy class
 void zeroOneGuy:: desribe(){cout<<"Zero One guy stays calm first and attacks one by one/ returns 0,1,0,1,0,1..."<<endl;}
 int zeroOneGuy:: play(){
-    if (move == 0)
-    {
-        return move;
-        move = 1;
-    }else
-    {
-        return move;
-        move = 0;
-    }
+    if (move){
+            move--;
+            return 1;
+    }else{
+            move++;
+            return 0;
+        }
     }
