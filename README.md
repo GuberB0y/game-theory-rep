@@ -30,5 +30,7 @@ IT'S JUST BACK END OF FUTURE SFML GAME WHICH IS CURRENTLY IN CREATION PROCESS
 
 ## How to use
 The main header file is mechanics.h which is in include folder
+
 The game.cpp (in src folder) file is an template which shows how to use the library
+
 You can add your new player class in players.h (include folder) and implement it's methods in players.cpp (src folder)
