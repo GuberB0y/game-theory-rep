@@ -18,13 +18,13 @@ int main(){
     //GAME:
     for (size_t i = 0; i < rounds; i++)
     {
-        playGame(&oneWinCopier , &zeroWinCopier ,  &rounds ,&i);
+        playGame(&nice , &bad ,  &rounds ,&i);
     }
     //Results
-    oneWinCopier.showName();
-    oneWinCopier.showStats();
+    nice.showName();
+    nice.showStats();
     cout<<endl;
-    zeroWinCopier.showName();
-    zeroWinCopier.showStats();
+    bad.showName();
+    bad.showStats();
     return 0;
 }
