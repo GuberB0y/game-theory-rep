@@ -11,10 +11,10 @@ int main(){
     zeroCopierGuy zeroCopier;
     oneWinCopierGuy oneWinCopier;
     zeroWinCopierGuy zeroWinCopier;
-
-    size_t rounds = 5;
-    //cin >> rounds;
-
+    
+    //give rounds
+    size_t rounds;
+    cin >> rounds;
     //GAME:
     for (size_t i = 0; i < rounds; i++)
     {
