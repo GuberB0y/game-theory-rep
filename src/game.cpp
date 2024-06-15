@@ -1,4 +1,3 @@
-#include "players.h"
 #include "mechanics.h"
 
 
@@ -8,18 +7,24 @@ int main(){
     badGuy bad;
     oneZeroGuy oneZero;
     zeroOneGuy zeroOne;
-    
-    size_t rounds = 100;
+    oneCopierGuy oneCopier;
+    zeroCopierGuy zeroCopier;
+    oneWinCopierGuy oneWinCopier;
+    zeroWinCopierGuy zeroWinCopier;
+
+    size_t rounds = 5;
     //cin >> rounds;
+
+    //GAME:
     for (size_t i = 0; i < rounds; i++)
     {
-        playGame(&zeroOne , &oneZero ,  &rounds ,&i);
+        playGame(&oneWinCopier , &zeroWinCopier ,  &rounds ,&i);
     }
     //Results
-    cout<<"ZeroOneGuy: "<<endl;
-    zeroOne.showStats();
+    oneWinCopier.showName();
+    oneWinCopier.showStats();
     cout<<endl;
-    cout<<"oneZeroGuy: "<<endl;
-    oneZero.showStats();
+    zeroWinCopier.showName();
+    zeroWinCopier.showStats();
     return 0;
 }

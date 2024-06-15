@@ -149,4 +149,5 @@ CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc \
+ D:/projects/cpp/git/game-theory-rep/include/statistics/stats.h

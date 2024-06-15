@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/projects/cpp/git/game-theory-rep/src/game.cpp" "CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj" "gcc" "CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj.d"
   "D:/projects/cpp/git/game-theory-rep/src/mechanics.cpp" "CMakeFiles/GameTheoryRep.dir/src/mechanics.cpp.obj" "gcc" "CMakeFiles/GameTheoryRep.dir/src/mechanics.cpp.obj.d"
   "D:/projects/cpp/git/game-theory-rep/src/players.cpp" "CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj" "gcc" "CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj.d"
+  "D:/projects/cpp/git/game-theory-rep/src/stats.cpp" "CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj" "gcc" "CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

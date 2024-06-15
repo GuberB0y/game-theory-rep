@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameTheoryRep.dir/src/mechanics.cpp.obj.d"
   "CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj"
   "CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj.d"
+  "CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj"
+  "CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj.d"
   "GameTheoryRep.exe"
   "GameTheoryRep.exe.manifest"
   "GameTheoryRep.pdb"

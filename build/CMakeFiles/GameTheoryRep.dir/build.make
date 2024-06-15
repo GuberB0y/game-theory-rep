@@ -114,11 +114,27 @@ CMakeFiles/GameTheoryRep.dir/src/players.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameTheoryRep.dir/src/players.cpp.s"
 	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/projects/cpp/git/game-theory-rep/src/players.cpp -o CMakeFiles/GameTheoryRep.dir/src/players.cpp.s
 
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj: CMakeFiles/GameTheoryRep.dir/flags.make
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj: CMakeFiles/GameTheoryRep.dir/includes_CXX.rsp
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj: D:/projects/cpp/git/game-theory-rep/src/stats.cpp
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj: CMakeFiles/GameTheoryRep.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/projects/cpp/git/game-theory-rep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj"
+	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj -MF CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj.d -o CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj -c D:/projects/cpp/git/game-theory-rep/src/stats.cpp
+
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameTheoryRep.dir/src/stats.cpp.i"
+	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/projects/cpp/git/game-theory-rep/src/stats.cpp > CMakeFiles/GameTheoryRep.dir/src/stats.cpp.i
+
+CMakeFiles/GameTheoryRep.dir/src/stats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameTheoryRep.dir/src/stats.cpp.s"
+	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/projects/cpp/git/game-theory-rep/src/stats.cpp -o CMakeFiles/GameTheoryRep.dir/src/stats.cpp.s
+
 # Object files for target GameTheoryRep
 GameTheoryRep_OBJECTS = \
 "CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj" \
 "CMakeFiles/GameTheoryRep.dir/src/mechanics.cpp.obj" \
-"CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj"
+"CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj" \
+"CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj"
 
 # External object files for target GameTheoryRep
 GameTheoryRep_EXTERNAL_OBJECTS =
@@ -126,10 +142,11 @@ GameTheoryRep_EXTERNAL_OBJECTS =
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/src/mechanics.cpp.obj
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/src/players.cpp.obj
+GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/build.make
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/linkLibs.rsp
 GameTheoryRep.exe: CMakeFiles/GameTheoryRep.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/projects/cpp/git/game-theory-rep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GameTheoryRep.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/projects/cpp/git/game-theory-rep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GameTheoryRep.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/GameTheoryRep.dir/objects.a
 	C:/msys64/mingw64/bin/ar.exe qc CMakeFiles/GameTheoryRep.dir/objects.a @CMakeFiles/GameTheoryRep.dir/objects1.rsp
 	C:/msys64/mingw64/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/GameTheoryRep.dir/objects.a -Wl,--no-whole-archive -o GameTheoryRep.exe -Wl,--out-implib,libGameTheoryRep.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/GameTheoryRep.dir/linkLibs.rsp

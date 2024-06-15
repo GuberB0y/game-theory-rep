@@ -1,5 +1,4 @@
 #include "mechanics.h"
-statsOfTheLastGame stats;
 
 //Main function for playing game
 void playGame(defaultPlayer* p1, defaultPlayer* p2, size_t* rounds ,size_t* iter){
@@ -15,24 +14,24 @@ void playGame(defaultPlayer* p1, defaultPlayer* p2, size_t* rounds ,size_t* iter
     {
         //Calling addWins() to add wins to the winner
         p1->addWins();
-        stats.winner = p1;
+        stats.winnerID = p1->getID();
         stats.winnerSMove = p1Move;
 
         //Same with loser | addLoses() 
         p2->addLoses();
-        stats.loser = p2;
+        stats.loserID = p2->getID();
         stats.loserSMove = p2Move;
         
     }else if (p1Move < p2Move)
     {
         //Calling addWins() to add wins to the winner
         p2->addWins();
-        stats.winner = p2;
+        stats.winnerID = p2->getID();
         stats.winnerSMove = p2Move;
 
         //Same with loser | addLoses() 
         p1->addLoses();
-        stats.loser = p1;
+        stats.loserID = p1->getID();
         stats.loserSMove = p1Move;
         
     }else

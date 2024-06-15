@@ -201,6 +201,30 @@ src/players.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTheoryRep.dir/build.make CMakeFiles/GameTheoryRep.dir/src/players.cpp.s
 .PHONY : src/players.cpp.s
 
+src/stats.obj: src/stats.cpp.obj
+.PHONY : src/stats.obj
+
+# target to build an object file
+src/stats.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTheoryRep.dir/build.make CMakeFiles/GameTheoryRep.dir/src/stats.cpp.obj
+.PHONY : src/stats.cpp.obj
+
+src/stats.i: src/stats.cpp.i
+.PHONY : src/stats.i
+
+# target to preprocess a source file
+src/stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTheoryRep.dir/build.make CMakeFiles/GameTheoryRep.dir/src/stats.cpp.i
+.PHONY : src/stats.cpp.i
+
+src/stats.s: src/stats.cpp.s
+.PHONY : src/stats.s
+
+# target to generate assembly for a file
+src/stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTheoryRep.dir/build.make CMakeFiles/GameTheoryRep.dir/src/stats.cpp.s
+.PHONY : src/stats.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/players.obj"
 	@echo "... src/players.i"
 	@echo "... src/players.s"
+	@echo "... src/stats.obj"
+	@echo "... src/stats.i"
+	@echo "... src/stats.s"
 .PHONY : help
 
 

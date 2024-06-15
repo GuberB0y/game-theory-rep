@@ -1,5 +1,6 @@
 CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj: \
  D:/projects/cpp/git/game-theory-rep/src/game.cpp \
+ D:/projects/cpp/git/game-theory-rep/include/mechanics/mechanics.h \
  D:/projects/cpp/git/game-theory-rep/include/players/players.h \
  C:/msys64/mingw64/include/c++/13.2.0/iostream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
@@ -150,4 +151,4 @@ CMakeFiles/GameTheoryRep.dir/src/game.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc \
- D:/projects/cpp/git/game-theory-rep/include/mechanics/mechanics.h
+ D:/projects/cpp/git/game-theory-rep/include/statistics/stats.h
