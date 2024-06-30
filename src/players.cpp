@@ -9,10 +9,10 @@ void defaultPlayer:: addTies(){this->ties++;}
 
 //Showing stats
 void defaultPlayer:: showStats(){
-    cout<<"Stats:"<<endl;
-    cout<<"Wins: "<<this->wins<<endl;
-    cout<<"Loses: "<<this->loses<<endl;
-    cout<<"Ties: "<<this->ties<<endl;
+    std::cout<<"Stats:"<<std::endl;
+    std::cout<<"Wins: "<<this->wins<<std::endl;
+    std::cout<<"Loses: "<<this->loses<<std::endl;
+    std::cout<<"Ties: "<<this->ties<<std::endl;
 }
 
 //Creating virtual method which is overrided by derived classes
@@ -22,22 +22,22 @@ int defaultPlayer::play(){return 0;}
 int defaultPlayer::getID(){return this->ID;}
 
 //showing name
-void defaultPlayer::showName(){cout<<this->name<<endl;}
+void defaultPlayer::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived niceGuy class  
 int niceGuy:: play(){return 0;}
-void niceGuy:: desribe(){cout<<"Nice Guy only stays calm / returns 0"<<endl;}
+void niceGuy:: desribe(){std::cout<<"Nice Guy only stays calm / returns 0"<<std::endl;}
 int niceGuy::getID(){return this->ID;}
-void niceGuy::showName(){cout<<this->name<<endl;}
+void niceGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived badGuy class
 int badGuy:: play(){return 1;}
-void badGuy:: desribe(){cout<<"Bad Guy only attacks / returns 1"<<endl;}
+void badGuy:: desribe(){std::cout<<"Bad Guy only attacks / returns 1"<<std::endl;}
 int badGuy::getID(){return this->ID;}
-void badGuy::showName(){cout<<this->name<<endl;}
+void badGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived oneZeroGuy class
-void oneZeroGuy:: desribe(){cout<<"One Zero guy attacks first and stays calm  one by one/ returns 1,0,1,0,1,0..."<<endl;}
+void oneZeroGuy:: desribe(){std::cout<<"One Zero guy attacks first and stays calm  one by one/ returns 1,0,1,0,1,0..."<<std::endl;}
 int oneZeroGuy:: play(){
     if (move){
             move--;
@@ -48,10 +48,10 @@ int oneZeroGuy:: play(){
         }
 }
 int oneZeroGuy::getID(){return this->ID;}
-void oneZeroGuy::showName(){cout<<this->name<<endl;}
+void oneZeroGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived zeroOneGuy class
-void zeroOneGuy:: desribe(){cout<<"Zero One guy stays calm first and attacks one by one/ returns 0,1,0,1,0,1..."<<endl;}
+void zeroOneGuy:: desribe(){std::cout<<"Zero One guy stays calm first and attacks one by one/ returns 0,1,0,1,0,1..."<<std::endl;}
 int zeroOneGuy:: play(){
     if (move){
             move--;
@@ -62,10 +62,10 @@ int zeroOneGuy:: play(){
         }
     }
 int zeroOneGuy::getID(){return this->ID;}
-void zeroOneGuy::showName(){cout<<this->name<<endl;}
+void zeroOneGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived zeroCopierGuy class
-void zeroCopierGuy:: desribe(){cout<<"Zero Copier Guy stays calm first and copies opponent's move"<<endl;}
+void zeroCopierGuy:: desribe(){std::cout<<"Zero Copier Guy stays calm first and copies opponent's move"<<std::endl;}
 int zeroCopierGuy:: play(){
     if (firstMove == 0){
         firstMove++;
@@ -75,10 +75,10 @@ int zeroCopierGuy:: play(){
     else{return stats.winnerSMove;}
 }
 int zeroCopierGuy::getID(){return this->ID;}
-void zeroCopierGuy::showName(){cout<<this->name<<endl;}
+void zeroCopierGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived oneCopierGuy class
-void oneCopierGuy::desribe(){cout<<"One Copier Guy attacks first and copies opponent's move"<<endl;}
+void oneCopierGuy::desribe(){std::cout<<"One Copier Guy attacks first and copies opponent's move"<<std::endl;}
 int oneCopierGuy:: play(){
     if (firstMove == 1){
         firstMove--;
@@ -88,10 +88,10 @@ int oneCopierGuy:: play(){
     else{return stats.winnerSMove;}
 }
 int oneCopierGuy::getID(){return this->ID;}
-void oneCopierGuy::showName(){cout<<this->name<<endl;}
+void oneCopierGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived zeroWinCopierGuy class
-void zeroWinCopierGuy::desribe(){cout<<"Zero Win Copier Guy stays calm first and copies winners move"<<endl;}
+void zeroWinCopierGuy::desribe(){std::cout<<"Zero Win Copier Guy stays calm first and copies winners move"<<std::endl;}
 int zeroWinCopierGuy::play(){
     if (firstMove == 0){
         firstMove++;
@@ -100,10 +100,10 @@ int zeroWinCopierGuy::play(){
     else{return stats.winnerSMove;}
 }
 int zeroWinCopierGuy::getID(){return this->ID;}
-void zeroWinCopierGuy::showName(){cout<<this->name<<endl;}
+void zeroWinCopierGuy::showName(){std::cout<<this->name<<std::endl;}
 
 //Implementing derived oneWinCopierGuy class
-void oneWinCopierGuy::desribe(){cout<<"One Win Copier Guy attacks first and copies winners move"<<endl;}
+void oneWinCopierGuy::desribe(){std::cout<<"One Win Copier Guy attacks first and copies winners move"<<std::endl;}
 int oneWinCopierGuy::play(){
     if (firstMove == 1){
         firstMove--;
@@ -112,4 +112,4 @@ int oneWinCopierGuy::play(){
     else{return stats.winnerSMove;}
 }
 int oneWinCopierGuy::getID(){return this->ID;}
-void oneWinCopierGuy::showName(){cout<<this->name<<endl;}
+void oneWinCopierGuy::showName(){std::cout<<this->name<<std::endl;}

@@ -14,7 +14,7 @@ int main(){
     
     //give rounds
     size_t rounds;
-    cin >> rounds;
+    std::cin >> rounds;
     //GAME:
     for (size_t i = 0; i < rounds; i++)
     {
@@ -23,7 +23,7 @@ int main(){
     //Results
     nice.showName();
     nice.showStats();
-    cout<<endl;
+    std::cout<<std::endl;
     bad.showName();
     bad.showStats();
     return 0;

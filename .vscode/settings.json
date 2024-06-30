@@ -56,6 +56,12 @@
         "optional": "cpp",
         "random": "cpp",
         "string_view": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "format": "cpp",
+        "charconv": "cpp",
+        "xlocmes": "cpp",
+        "xloctime": "cpp",
+        "span": "cpp",
+        "variant": "cpp"
     }
 }

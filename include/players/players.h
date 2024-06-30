@@ -1,12 +1,10 @@
 #ifndef PLAYERS_HPP
 #define PLAYERS_HPP
 #include <iostream>
-#include <vector>
 #include <string>
 #include <cstddef>
 #include "stats.h"
 
-using namespace std;
 
 //Creating default player class
 class defaultPlayer
@@ -17,7 +15,7 @@ private:
     int loses = 0;
     int ties = 0;
     int ID;
-    string name;
+    std::string name;
 public:
     //Creating functiond which adds 1 to basic infos
     void addWins();
@@ -37,7 +35,7 @@ public:
 class niceGuy : public defaultPlayer
 {
 private:
-    string name = "Nice Guy";
+    std::string name = "Nice Guy";
     int ID = 00;
 public:
     int play() override;
@@ -50,7 +48,7 @@ public:
 class badGuy : public defaultPlayer
 {
 private:
-    string name = "Bad Guy";
+    std::string name = "Bad Guy";
     int ID = 01;
 public:
     int play() override;
@@ -64,7 +62,7 @@ class oneZeroGuy : public defaultPlayer
 {
 private:
     //Adding our "move checker"
-    string name = "One Zero Guy";
+    std::string name = "One Zero Guy";
     int ID = 02;
     int move = 1;
 public:
@@ -78,7 +76,7 @@ public:
 class zeroOneGuy : public defaultPlayer
 {
 private:
-    string name = "Zero One Guy";
+    std::string name = "Zero One Guy";
     int ID = 03;
     //Adding our "move checker"s
     int move = 0;
@@ -93,7 +91,7 @@ public:
 class zeroCopierGuy : public defaultPlayer
 {
 private:
-    string name = "Zero Copier Guy";
+    std::string name = "Zero Copier Guy";
     int ID = 04;
     //Adding first move
     int firstMove = 0;
@@ -108,7 +106,7 @@ public:
 class oneCopierGuy : public defaultPlayer
 {
 private:
-    string name = "One Copier Guy";
+    std::string name = "One Copier Guy";
     int ID = 05;
     int firstMove = 1;
 public:
@@ -122,7 +120,7 @@ public:
 class zeroWinCopierGuy : public defaultPlayer
 {
 private:
-    string name = "Zero Win Copier Guy";
+    std::string name = "Zero Win Copier Guy";
     int ID = 06;
     //Adding first move
     int firstMove = 0;
@@ -137,7 +135,7 @@ public:
 class oneWinCopierGuy : public defaultPlayer
 {
 private:
-    string name = "One Win Copier Guy";
+    std::string name = "One Win Copier Guy";
     int ID = 07;
     int firstMove = 1;
 public:
